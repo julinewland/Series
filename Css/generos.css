@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(19, 23, 39);
+  color: white;
+}
+
+
+footer {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none
+}
+.footer li.nombre {
+  padding: inherit;
+}
+
+#barra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.navegador {
+  list-style-type: none;
+}
+.navegador li {
+  display: inline;
+  padding: inherit;
+}
+.navegador li:hover {
+  color: rgb(235, 99, 107);
+}
+div.seriesrecomendadas img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+img {
+  width: 15%
+}
+div.titulo h1 {
+margin-left: 50%;
+  font-size: 25px
+}
+@media (min-width: 768px){
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 480px) {
+
+}
