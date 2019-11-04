@@ -1,38 +1,109 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(19, 23, 39);
   color: white;
+    font-family: helvetica;
 }
-div img {
-width: 100%;
+
+#barra{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 0.05);
 }
-div.info
-{
-  width: 74%;
+
+.navegador li:hover{
+  color: rgb(235, 99, 107);
 }
-div.serie1 {
-  width: 24%;
+
+
+.navegador {
+list-style-type: none;
 }
-div.total
-{
+
+.navegador li {
+  display: inline;
+  padding: inherit;
+  font-weight: 500;
+}
+
+.total{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 10%;
+  margin-bottom: 10%;
 }
-div.info h2.infoo
-{
-  font-weight: lighter;
-  font-size: 18px
+
+.display{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1%;
 }
+
+.contenedor{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.detalle h2{
+  text-transform: uppercase;
+  font-size: 6vw;
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+
+.detalle h3{
+  font-size: 2.5vw;
+  margin-top: 0;
+}
+
+.detalle h4{
+  font-size: 2vw;
+  margin-top: 6%;
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+.detalle h4 ion-icon{
+  color: gold;
+}
+
+.detalle h6{
+    font-size: 1.5vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.detalle{
+  width: 60%;
+
+}
+
+.imagen{
+  width: 30%;
+}
+
+.imagen img{
+  width: 100%;
+}
+
 div.info h2.titulo {
   font-size: 25px
 }
+
 div.info h2 {
   font-size: 15px;
   font-weight: lighter;
 }
+
 footer {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -42,31 +113,17 @@ footer {
 .footer li.nombre {
   padding: inherit;
 }
-#barra {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.05);
+
+.recon{
+  font-size: 1.7vw;
+  margin-left: 4%;
+  margin-bottom: 4%;
 }
-.navegador {
-  list-style-type: none;
-}
-.navegador li {
-  display: inline;
-  padding: inherit;
-}
-.navegador li:hover {
+
+h2.recon:hover {
   color: rgb(235, 99, 107);
 }
-h2.recon{
-  margin-left: 65px;
-  font-size: 15px;
-  font-weight: lighter;
-  text-decoration: underline;
-}
-h2.recon:hover {
-  color: orange;
-}
+
 div.rr1 {
   display: flex;
   flex-wrap: wrap;
@@ -78,12 +135,4 @@ div.rr1 {
 }
 .recomendaciones img {
   width: 100%;
-}
-@media (min-width: 768px){
-}
-@media (min-width: 992px) {
-
-}
-@media (min-width: 480px) {
-
 }
