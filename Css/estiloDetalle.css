@@ -40,7 +40,7 @@ list-style-type: none;
 .display{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1%;
+  margin-bottom: 0;
 }
 
 .contenedor{
@@ -57,8 +57,10 @@ list-style-type: none;
 }
 
 .detalle h3{
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-top: 0;
+  margin-bottom: 4%;
+  font-weight: 200;
 }
 
 .detalle h4{
@@ -73,7 +75,7 @@ list-style-type: none;
 }
 
 .detalle h6{
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -91,14 +93,6 @@ list-style-type: none;
   width: 100%;
 }
 
-div.info h2.titulo {
-  font-size: 25px
-}
-
-div.info h2 {
-  font-size: 15px;
-  font-weight: lighter;
-}
 
 footer {
   background-color: rgba(255, 255, 255, 0.05);
@@ -136,3 +130,98 @@ div.rr1 {
 .recomendaciones img {
   width: 100%;
 }
+
+
+.punt{
+  position: relative;
+  width: 16%;
+}
+
+.punt img{
+  width: 100%;
+}
+
+.punt h5{
+  width:100%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  margin: 0;
+  padding: 12%;
+  padding-top: 20%;
+  /* top: 65%; */
+  bottom: 0;
+  /* left: 7%; */
+  text-transform: uppercase;
+  hyphens: auto;
+}
+
+.punt h6{
+  width:100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 10%;
+  padding-left: 75%;
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.punt h6 ion-icon{
+  color: gold;
+}
+
+@media (max-width: 450px){
+
+  .punt{
+    position: relative;
+    width: 47%;
+    }
+
+  .imagen{
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .detalle{
+    width: 100%;
+  }
+  .detalle h2{
+    text-transform: uppercase;
+    font-size: 10vw;
+    margin-top: 0;
+    margin-bottom: 1%;
+  }
+
+  .detalle h3{
+    font-size: 8vw;
+    margin-top: 0;
+    margin-bottom: 4%;
+    font-weight: 200;
+  }
+
+  .detalle h4{
+    font-size: 7vw;
+    margin-top: 6%;
+    margin-left: 2%;
+    margin-bottom: 0;
+  }
+
+  .detalle h4 ion-icon{
+    color: gold;
+  }
+
+  .detalle h6{
+      font-size: 5vw;
+      margin-top: 2%;
+      margin-bottom: 2%;
+  }
+
+}
+
+@media (min-width: 451px) and (max-width: 750px){
+
+  .punt{
+    position: relative;
+  width: 32%;
+    }
