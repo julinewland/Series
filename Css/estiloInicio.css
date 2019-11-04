@@ -67,10 +67,6 @@ list-style-type: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.favsemana img{
-  width: 0%;
-}
 .textof{
   width: 65%;
 }
@@ -103,14 +99,23 @@ list-style-type: none;
   bottom: 0;
   /* left: 7%; */
   text-transform: uppercase;
+  hyphens: auto;
 }
 
 .punt h6{
+  width:100%;
   position: absolute;
-  top: 73%;
-  left: 7%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 10%;
+  padding-left: 75%;
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
-
+.punt h6 ion-icon{
+  color: gold;
+}
 .favoritas{
   display: flex;
   flex-wrap: wrap;
@@ -136,8 +141,8 @@ list-style-type: none;
 
 .fav h6{
   position: absolute;
-  top: 73%;
-  left: 7%;
+  top: -8%;
+  left: 77%;
 }
 
 .alaire{
@@ -165,8 +170,8 @@ list-style-type: none;
 
 .tv h6{
   position: absolute;
-  top: 73%;
-  left: 7%;
+  top: -8%;
+  left: 77%;
 }
 
 .titulo{
@@ -200,3 +205,43 @@ ul .buscar{
 ul li ion-icon:hover{
   color: rgb(235, 99, 107);
 }
+ footer{
+   height: 20%;
+   background-color: rgba(255, 255, 255, 0.05);
+   padding-top: 3%;
+   padding-bottom: 3%;
+   margin-top: 2%;
+ }
+
+footer ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer ul li{
+  padding-right: 4%;
+
+}
+
+footer img{
+  width: 20%;
+}
+
+@media (max-width: 450px){
+
+  .punt{
+    position: relative;
+    width: 47%;
+    }
+
+
+}
+
+@media (min-width: 451px) and (max-width: 750px){
+
+  .punt{
+    position: relative;
+  width: 32%;
+    }
