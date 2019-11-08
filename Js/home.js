@@ -27,7 +27,7 @@ window.onload = function() {
 
     var favs = respuesta.results;
     for (var i = 0; i < favs.length; i++) {
-      document.querySelector(".favoritas").innerHTML += "<div class='punt'><img src=http://image.tmdb.org/t/p/w200"+ favs[i].poster_path+"><h5>"+favs[i].name + "</h5><h6>"+favs[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
+      document.querySelector(".favoritas").innerHTML += "<div class='punt'><a href=detalle.html?"+ favs[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ favs[i].poster_path+"></a><h5>"+favs[i].name + "</h5><h6>"+favs[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
     }
   })
 
