@@ -161,6 +161,10 @@ ul .buscar{
 ul li ion-icon:hover{
   color: rgb(235, 99, 107);
 }
-div.genero {
-display: flex;
+
+div.generos {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
 }

@@ -1,6 +1,15 @@
+<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
 }
+=======
+
+*{
+
+  box-sizing: border-box;
+
+  }
+>>>>>>> Stashed changes
 
 body {
   background-color: rgb(19, 23, 39);
