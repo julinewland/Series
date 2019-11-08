@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="../Css/estilobuscador.css">
   </head>
   <body>
     <nav id="barra">
@@ -10,20 +11,34 @@
         <li>logo</li>
       </ul>
       <ul class="navegador">
-        <li>Inicio</li>
-        <li>Géneros</li>
-        <li>Series</li>
-        <li>Quiz</li>
-        <li>Buscador avanzado</li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="genero.html">Generos</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="buscador.html">Buscador avanzado</a></li>
       </ul>
       <ul class="navegador">
         <li class="buscar"><ion-icon class="busc" name="search"></ion-icon></li>
       </ul>
     </nav>
-    <div class="Buscador">
-      <form class="x" action="index.html" method="post">
+    <div class="buscador">
+      <form class="" action="index.html" method="post">
+        <select class="genero" name="Genero">
+
+        </select>
+        <select class="genero-excluido" name="">
+
+        </select>
+        <select class="orden" name="">
+          poner para que sea de la A a la z
+        </select>
+        <select class="Año" name="">
+
+        </select>
+        <button type="submit" name="button">Buscar</button>
 
       </form>
     </div>
+    <script src="../Js/buscador.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>

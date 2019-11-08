@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica;
+  background-color: rgb(19, 23, 39);
+  color: white;
+
+}
+
+#barra{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navegador a:hover{
+  color: rgb(235, 99, 107);
+
+}
+
+
+.navegador {
+list-style-type: none;
+}
+
+.navegador li {
+  display: inline;
+  padding: inherit;
+  font-weight: 500;
+}
+
+.navegador li a{
+  color: white;
+  text-decoration: none;
+}
+
+.buscador{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20%;
+}
