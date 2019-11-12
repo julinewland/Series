@@ -1,15 +1,7 @@
-<<<<<<< Updated upstream
 * {
   box-sizing: border-box;
 }
-=======
 
-*{
-
-  box-sizing: border-box;
-
-  }
->>>>>>> Stashed changes
 
 body {
   background-color: rgb(19, 23, 39);
@@ -24,7 +16,7 @@ justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
 }
 
-.navegador li:hover{
+.navegador a:hover{
   color: rgb(235, 99, 107);
 }
 
@@ -39,12 +31,16 @@ list-style-type: none;
   font-weight: 500;
 }
 
+.navegador li a{
+  color: white;
+  text-decoration: none;
+}
 .total{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 10%;
-  margin-bottom: 10%;
+  padding-top: 4%;
+  margin-bottom: 4%;
 }
 
 .display{
@@ -75,7 +71,7 @@ list-style-type: none;
 
 .detalle h4{
   font-size: 2vw;
-  margin-top: 6%;
+  margin-top: 0;
   margin-left: 2%;
   margin-bottom: 0;
 }

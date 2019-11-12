@@ -16,7 +16,12 @@ justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
 }
 
-.navegador li:hover{
+.navegador li a{
+  color: white;
+  text-decoration: none;
+}
+
+.navegador a:hover{
   color: rgb(235, 99, 107);
 }
 
