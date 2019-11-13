@@ -31,6 +31,10 @@ list-style-type: none;
   font-weight: 500;
 }
 
+ul li img{
+  width: 30%;
+}
+
 .navegador li a{
   color: white;
   text-decoration: none;

@@ -6,6 +6,9 @@ body {
   font-family: helvetica;
   background-color: rgb(19, 23, 39);
   color: white;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
 
 }
 
@@ -19,6 +22,10 @@ background-color: rgba(255, 255, 255, 0.05);
 .navegador a:hover{
   color: rgb(235, 99, 107);
 
+}
+
+.imagen-fondo{
+  width: 100%;
 }
 
 .textof h3{
@@ -46,6 +53,10 @@ background-color: rgba(255, 255, 255, 0.05);
 .sem{
   display: flex;
   flex-wrap: wrap;
+}
+
+ul li img{
+width: 30%;
 }
 
 .navegador {
@@ -238,6 +249,71 @@ footer img{
 .favsemana img.{
 
 }
+
+.detalle h2{
+  text-transform: uppercase;
+  font-size: 6vw;
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+
+.detalle h3{
+  font-size: 3vw;
+  margin-top: 0;
+  margin-bottom: 4%;
+  font-weight: 200;
+}
+
+.detalle h4{
+  font-size: 2vw;
+  margin-top: 0;
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+.detalle h4 ion-icon{
+  color: gold;
+}
+
+.detalle h6{
+    font-size: 2vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.detalle{
+  width: 60%;
+
+}
+
+.total{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 4%;
+  margin-bottom: 4%;
+}
+
+
+.display{
+  display: flex;
+  flex-wrap: wrap;
+}
+ .imagen{
+   width: 30%;
+ }
+
+ .imagen img{
+   width: 100%;
+ }
+
+ .detalle{
+   width: 60%;
+ }
+
+
+
+
 
 @media (max-width: 450px){
 
