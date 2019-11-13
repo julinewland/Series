@@ -10,11 +10,9 @@ window.onload = function() {
 
     var serie = respuesta.results;
     for (var i = 0; i < serie.length; i++) {
-<<<<<<< Updated upstream
+
       document.querySelector(".puntuadas").innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
-=======
-      document.querySelector(".puntuadas").innerHTML += "<div class='punt'><a href=detalle.html?"+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
->>>>>>> Stashed changes
+
     }
   })
   .catch(function(error) {
@@ -49,11 +47,7 @@ window.onload = function() {
 
     var aire = respuesta.results;
     for (var i = 0; i < aire.length; i++) {
-<<<<<<< Updated upstream
       document.querySelector(".alaire").innerHTML += "<div class='punt'><a href=detalle.html?id="+ aire[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ aire[i].poster_path+"></a><h5>"+aire[i].name + "</h5><h6>"+aire[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
-=======
-      document.querySelector(".alaire").innerHTML += "<div class='punt'><a href=detalle.html?"+ aire[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ aire[i].poster_path+"></a><h5>"+aire[i].name + "</h5><h6>"+aire[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
->>>>>>> Stashed changes
     }
   })
   .catch(function(error) {

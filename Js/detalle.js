@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 window.onload = function() {
   console.log("OK");
   var idGenero = new URLSearchParams(location.search).get("id");
@@ -74,5 +74,3 @@ for (var i = 0; i <5; i++) {
 </div>"
 
 */
-=======
->>>>>>> Stashed changes
