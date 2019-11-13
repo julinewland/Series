@@ -56,3 +56,6 @@ footer ul li{
 footer img{
  width: 20%;
 }
+@media (min-width: 451px) and (max-width: 750px){}
+
+@media (max-width: 450px){}

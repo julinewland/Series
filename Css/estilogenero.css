@@ -174,14 +174,18 @@ div.generos{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.genero{
+  text-decoration: none;
+}
 .genero:hover {
   color: rgb(235, 99, 107);
 }
 
-.genero {
-  text-decoration:none;
+h3 {
   color: white;
+}
+h3:hover  {
+  color:rgb(235, 99, 107);
 }
 .genero{
   width: 16%;
@@ -189,3 +193,7 @@ div.generos{
 .generos img{
   width: 100%;
 }
+
+@media (min-width: 451px) and (max-width: 750px){}
+
+@media (max-width: 450px){}
