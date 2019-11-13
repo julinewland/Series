@@ -26,6 +26,7 @@ window.onload = function(){
     console.log(error)
   })
 
+document.querySelector(".resultado").innerHTML += "<h2>Resultado de '"+ loBuscado +"':</h2>"
 
 
 }

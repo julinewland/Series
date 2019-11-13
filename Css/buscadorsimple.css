@@ -56,6 +56,59 @@ footer ul li{
 footer img{
  width: 20%;
 }
+
+.total{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 4%;
+  margin-bottom: 4%;
+}
+
+.punt img{
+  width: 100%;
+  -webkit-box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
+}
+
+.punt{
+  position: relative;
+  width: 16%;
+}
+
+.punt h5{
+  width:100%;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  position: absolute;
+  margin: 0;
+  padding: 12%;
+  padding-top: 20%;
+  /* top: 65%; */
+  bottom: 0;
+  /* left: 7%; */
+  text-transform: uppercase;
+  hyphens: auto;
+}
+
+.punt h6{
+  width:100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 10%;
+  padding-left: 75%;
+  background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.punt h6 ion-icon{
+  color: gold;
+}
+
+.punt h5:hover{
+  color: rgb(235, 99, 107);
+}
+
 @media (min-width: 451px) and (max-width: 750px){}
 
 @media (max-width: 450px){}
