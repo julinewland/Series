@@ -169,9 +169,23 @@ ul li ion-icon:hover{
   color: rgb(235, 99, 107);
 }
 
-div.generos {
-  width: 50%;
+div.generos{
   display: flex;
   flex-wrap: wrap;
-  margin: 5px;
+  justify-content: space-between;
+}
+
+.genero:hover {
+  color: rgb(235, 99, 107);
+}
+
+.genero {
+  text-decoration:none;
+  color: white;
+}
+.genero{
+  width: 16%;
+}
+.generos img{
+  width: 100%;
 }
