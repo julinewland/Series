@@ -52,18 +52,25 @@ window.onload = function() {
     alert("Error, perdon, vuelva mas tarde")
   })
 
-  fetch("https://api.themoviedb.org/3/tv/latest?api_key=9901ee414425659325dc091c288e33c9&language=en-US")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(respuesta) {
-    console.log(respuesta);
 
-    var elegida = respuesta;
-      document.querySelector(".favsemana").innerHTML += "<img src=http://image.tmdb.org/t/p/w200"+elegida.backdrop_path+"><h2>La serie mas reciente:</h2><h3>"+ elegida.original_name+"</h3><div class='sem'><h4>"+elegida.first_air_date+"</h4><h5>"+elegida.genres+"</h5></div><p>"+ elegida.overview+"</p></div><div class='fotof'><img src=http://image.tmdb.org/t/p/w200"+elegida.poster_path+ "></div>"
-    })
-  .catch(function(error) {
-
-})
 
 }
+
+fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c288e33c9&language=en-US&page=1")
+.then(function(response) {
+  return response.json();
+})
+.then(function(respuesta) {
+  console.log(respuesta.results[9]);
+
+  var favs = respuesta.results;
+  for (var i = 0; i < 1; i++) {
+    document.querySelector(".favsemana").innerHTML += "<div class='total'><div class='imagen'><img src=http://image.tmdb.org/t/p/w200"+ favs[i].poster_path +"></div><div class='detalle'><div class='display'><h2 class='copia'>"+ favs[i].original_name +"</h2><h4 class='copia'>"+favs[i].vote_average+"<ion-icon name='star'></ion-icon></h4></div><h3 class='copia'>"+ favs[i].first_air_date +"</h3><p class='copia'>"+ favs[i].overview+ "</p></div></div>"
+
+    document.body.style.backgroundImage = "url('http://image.tmdb.org/t/p/w200"+ favs[i].backdrop_path +"')"
+}
+})
+
+.catch(function(error) {
+  alert("Error, perdon, vuelva mas tarde")
+})

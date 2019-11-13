@@ -34,7 +34,9 @@ list-style-type: none;
   padding: inherit;
   font-weight: 500;
 }
-
+ ul li img{
+   width: 30%;
+ }
 
 
 .textof{

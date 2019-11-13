@@ -20,6 +20,9 @@ background-color: rgba(255, 255, 255, 0.05);
   color: rgb(235, 99, 107);
 }
 
+ul li img{
+  width: 30%;
+}
 
 .navegador {
 list-style-type: none;
