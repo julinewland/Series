@@ -25,16 +25,11 @@ window.onload = function() {
     }
 
     var total = document.querySelector("div.total");
-    total.innerHTML += `
-    <div class="total"><div class="imagen"><img src="http://image.tmdb.org/t/p/w200/`+ poster + `" alt=""></div><div class="detalle"><div class="display">
+    total.innerHTML += `<div class="total"><div class="imagen"><img src="http://image.tmdb.org/t/p/w200/`+ poster + `" alt=""></div><div class="detalle"><div class="display">
     <h2>`+nombre +`</h2><h4>`+estrellas+`<ion-icon name="star"></ion-icon></h4></div>
     <h3>`+ anio +`</h3><h6>Genero: `+generos+`</h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
-    <p>`+ sinopsis +`</p></div>
-    </div>
-    `;
-
-
-  })
+    <p>`+ sinopsis +`</p></div></div>`
+})
   console.log("OK");
   var idGenero = new URLSearchParams(location.search).get("id");
   fetch("https://api.themoviedb.org/3/tv/"+ idGenero +"/recommendations?api_key=9901ee414425659325dc091c288e33c9&language=en-US&page=1")

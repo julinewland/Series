@@ -14,9 +14,14 @@ window.onload = function(){
 
     var serie = respuesta.results;
     console.log(serie);
-    for (var i = 0; i < serie.length; i++) {
-      document.querySelector(".total").innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path+"></a><h5>"+serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
-    }
+
+
+      for (var i = 0; i < serie.length; i++) {
+        if(serie[i].vote_average != 0 && serie[i].poster_path != null){
+        document.querySelector(".total").innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path+"></a><h5>"+serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
+        }
+      }
+
 
 
     })

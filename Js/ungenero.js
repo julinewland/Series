@@ -13,13 +13,14 @@ console.log(respuesta.results);
 
 
   var serie = respuesta.results;
+
+  var div = document.querySelector(".total")
+  console.log(div);
+
   for (var i = 0; i < serie.length; i++) {
     //OJO, CAMBIAR
-
-    document.querySelector(".puntuadas").innerHTML += "<div class='punt'><a href=detalle.html?"+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
-
+      div.innerHTML += "<div class='punt'><a href=detalle.html?"+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
     //document.querySelector(".textof").innerHTML += "<h2>"+serie[].genres+":</h2>"
-
   }
 })
 .catch(function(error) {
