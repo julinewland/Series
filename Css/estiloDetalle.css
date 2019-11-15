@@ -181,6 +181,28 @@ div.rr1 {
   color: gold;
 }
 
+form{
+  display: inline;
+}
+form .white{
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0px;
+  height: 25px;
+}
+
+.lupita{
+  position: relative;
+  width: 20px;
+  left: -26px;
+  bottom: -7px;
+}
+.lupa{
+  background-image: url();
+  position: relative;
+  left: -55px;
+  display: none;
+}
+
 @media (max-width: 450px){
 
   .punt{

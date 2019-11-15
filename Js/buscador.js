@@ -12,6 +12,8 @@ window.onload = function() {
     for (var i = 0; i < genero.length; i++) {
       document.querySelector(".genero").innerHTML += "<option value=''>"+  genero[i].name +"</option>"}
 
-
+.catch(function(error) {
+        console.log(error)
+})
 
 })

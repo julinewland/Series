@@ -17,8 +17,9 @@
         <li><a href="buscador.html">Buscador avanzado</a></li>
         <li class="buscar">
           <form class='' action='buscadorsimple.html' method='get'>
-            <input type='text' name='buscador' value=''>
-            <input type='submit' name='' value='Enviar'>
+            <input type='text' class="white" name='buscador' value=''>
+            <input type='submit' class="lupa" name='' value=''>
+            <img class="lupita" src="../Archivos/Lupa.png" alt="">
           </form>
         </li>
       </ul>
@@ -26,17 +27,17 @@
     <div class="buscador">
       <form class="" action="index.html" method="post">
         <select class="genero" name="Genero">
-
+          
         </select>
-        <select class="genero-excluido" name="">
+        <select class="genero-excluido" name="gen-e">
 
         </select>
         <select class="orden" name="">
             <!-- poner para que sea de la A a la z -->
         </select>
-        <select class="Año" name="">
+        <input class="Año" type="number" name="Año" placeholder="Ej: 1999">
 
-        </select>
+      </input>
         <button type="submit" name="button">Buscar</button>
 
       </form>
