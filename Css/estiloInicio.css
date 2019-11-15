@@ -8,8 +8,6 @@ body {
   color: white;
   background-size: 100%;
   background-repeat: no-repeat;
-
-
 }
 
 #barra{
@@ -235,29 +233,6 @@ ul .buscar{
 ul li ion-icon:hover{
   color: rgb(235, 99, 107);
 }
- footer{
-   height: 20%;
-   background-color: rgba(255, 255, 255, 0.05);
-   padding-top: 3%;
-   padding-bottom: 3%;
-   margin-top: 2%;
- }
-
-footer ul{
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-footer ul li{
-  padding-right: 4%;
-
-}
-
-footer img{
-  width: 20%;
-}
 
 .favsemana img.{
 
@@ -351,6 +326,30 @@ form .white{
   left: -55px;
   display: none;
 }
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  justify-content: flex-end;
+}
+
+.imag img{
+  width: 100%;
+}
+
+.imag{
+  width: 5%;
+  padding-right: 2%;
+}
+
+.name{
+  padding-right: 3%;
+}
+
 @media (max-width: 450px){
 
   .punt{

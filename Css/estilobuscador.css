@@ -69,6 +69,8 @@ form .white{
   left: -55px;
   display: none;
 }
+
+
 @media (min-width: 451px) and (max-width: 750px){}
 
 @media (max-width: 450px){}
