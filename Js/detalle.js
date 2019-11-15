@@ -1,5 +1,5 @@
 
-window.onload = function() {
+window.addEventListener("load", function() {
   console.log("OK");
   var idGenero = new URLSearchParams(location.search).get("id");
   fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=es")
@@ -58,7 +58,7 @@ for (var i = 0; i <5; i++) {
 
 
 
-}
+})
 /*
 
 "<div class="total"><div class="imagen"><img src="+ +" alt=""></div><div class="detalle"><div class="display">
