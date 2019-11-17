@@ -16,4 +16,21 @@ window.addEventListener('load', function() {
     }
 })
 
+
+  var form = document.querySelector('.avanzado');
+
+  form.onsubmit = function (e) {
+
+    e.preventDefault()
+
+    var generoValue = document.querySelector('.genero').options[document.querySelector('.genero').selectedIndex].value;
+
+    var generoEValue = document.querySelector('.genero-excluido').options[document.querySelector('.genero-excluido').selectedIndex].value;
+
+
+    if(generoValue == generoEValue){
+      alert('EEE')
+    }
+  }
+
 })

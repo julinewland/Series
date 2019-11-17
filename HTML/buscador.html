@@ -25,23 +25,24 @@
       </ul>
     </nav>
     <div class="buscador">
-      <form class="" action="" method="get">
+      <form class="avanzado" action="resultados.html" method="get">
 
         <select class="edicion" class="genero" name="genero">
           <option hidden>Selecciona el genero</option>
         </select>
 
         <select class="edicion" class="genero-excluido" name="gen-e">
-          <option hidden>Selecciona el genero expluido</option>
+          <option hidden>Selecciona el genero excluido</option>
         </select>
 
         <select class "edicion" class="orden" name="orden">
-            <option value="vote_average.desc">Voto Ascendente</option>
-            <option value="">Voto Descendente</option>
-            <option value="">Fecha Ascendente</option>
-            <option value="">Fecha Descendente</option>
-            <option value="">Popularidad Ascendente</option>
-            <option value="">Popularidad Descendente</option>
+            <option value="vacio">Selecciona un orden</option>
+            <option value="vote_average.asc">Voto Ascendente</option>
+            <option value="vote_average.desc">Voto Descendente</option>
+            <option value="first_air_date.asc">Fecha Ascendente</option>
+            <option value="first_air_date.desc">Fecha Descendente</option>
+            <option value="popularity.asc">Popularidad Ascendente</option>
+            <option value="popularity.desc">Popularidad Descendente</option>
         </select>
 
         <input class="edicion" class="Año" type="number" name="Año" placeholder="Ej: 1999">
