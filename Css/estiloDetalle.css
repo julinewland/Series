@@ -125,13 +125,16 @@ div.name{
 
 h2.recon:hover {
   color: rgb(235, 99, 107);
+  cursor: pointer;
 }
 
 div.rr1 {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content:space-between;
 }
+
+
 .recomendaciones {
   margin-left: 2%;
   width: 15%;
@@ -248,18 +251,18 @@ h6 a:hover{
 }
 
 .modal{
-  display: block;
+  display: none;
   position: fixed;
   margin: 0 auto;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
   width: 100%;
   height: 100%;
 }
 
 .video{
   position: relative;
-  z-index: 2;
+  z-index: 1000;
   background-color: rgba(255, 255, 255);
   margin: auto;
   width: 30%;
@@ -267,6 +270,8 @@ h6 a:hover{
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   animation-name: modal;
   animation-duration: 2s;
+  margin-bottom: 30%;
+
 }
 
 .header-modal{
@@ -276,6 +281,13 @@ h6 a:hover{
 
 .header-modal ion-icon{
   color: white;
+  padding: 4px;
+}
+
+.header-modal h3{
+  padding: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .header-modal ion-icon:hover{
@@ -290,8 +302,8 @@ h6 a:hover{
 
 .contenedor{
   position: relative;
+  z-index: 0
 }
-
 @media (max-width: 450px){
 
   .punt{

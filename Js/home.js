@@ -72,19 +72,20 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
     document.querySelector(".fondo").style.backgroundImage = "url('http://image.tmdb.org/t/p/w200"+ favs[i].backdrop_path +"')"
 }
 })
+  var buscar = document.querySelector(".lupa") //ESTO ES EL BOTON DE SUBMIT
+var buscado = document.querySelector(".white") //ESTO ES EL INPUT PARA ESCRIBIR
 
-.catch(function(error) {
-  alert("Error, perdon, vuelva mas tarde")
-})
-
-//function validarLongitud(){
-//  var buscador = document.querySelector(".white");
-//  if(buscador.value == ! /^[a-z]{3}$/i.test(unitBrief) && buscador.value != ""){
-
-//    setTimeout('validar()',3000)
-//    alert("introducí al menos 4 caracteres")
-
-//  }
-//  else{
-
+buscar.onsubmit = function(event){
+  if(buscado.value.length >= 3) {
   }
+  else {
+  event.preventDefault()
+  setTimeout('minimoTres()',3000)}
+
+  function minimoTres(){
+  alert("introducí al menos 3 caracteres")
+  }
+}
+
+
+}

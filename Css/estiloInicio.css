@@ -348,6 +348,10 @@ div.name{
 
 @media (max-width: 450px){
 
+  .blur{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
   .punt{
     position: relative;
     width: 47%;

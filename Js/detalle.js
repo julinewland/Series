@@ -25,6 +25,44 @@ window.addEventListener("load", function() {
       lenguajeOriginal= lenguajeOriginal
     }
 
+    if (lenguajeOriginal == "fr"){
+      lenguajeOriginal = "Francés"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+    if (lenguajeOriginal == "ja"){
+      lenguajeOriginal = "Japonés"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+    if (lenguajeOriginal == "es"){
+      lenguajeOriginal = "Español"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+    if (lenguajeOriginal == "pt"){
+      lenguajeOriginal = "Portugués"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+    if (lenguajeOriginal == "it"){
+      lenguajeOriginal = "Italiano"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+    if (lenguajeOriginal == "ko"){
+      lenguajeOriginal = "Koreano"
+    }
+    else {
+      lenguajeOriginal= lenguajeOriginal
+    }
+
+
     var total = document.querySelector("div.total");
     total.innerHTML += `<div class="total"><div class="imagen"><img src="http://image.tmdb.org/t/p/w200/`+ poster + `" alt=""></div><div class="detalle"><div class="display">
     <h2>`+nombre +`</h2><h4>`+estrellas+`<ion-icon name="star"></ion-icon></h4></div>
@@ -42,7 +80,10 @@ window.addEventListener("load", function() {
 
 var reco = respuesta.results;
 console.log(reco);
+
+
 for (var i = 0; i <5; i++) {
+
   document.querySelector(".rr1").innerHTML += "<div class='punt'><a href=detalle.html?id="+ reco[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ reco[i].poster_path+"></a><h5>"+reco[i].name + "</h5><h6>"+reco[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
 }
 
@@ -62,8 +103,14 @@ for (var i = 0; i <5; i++) {
     var trailer = respuesta.results[0]
     console.log(trailer);
     var video = trailer.key
+    if (video != null) {
 
-    document.querySelector(".referencia").innerHTML += "<iframe width='560' height='315' src='https://www.youtube.com/embed/" + video + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+      document.querySelector(".trailer").innerHTML += "<h4>Ver trailer</h4>"
+
+      document.querySelector(".referencia").innerHTML += "<iframe width='233' height='' src='https://www.youtube.com/embed/" + video + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    }else{
+
+    }
 
 
   })
@@ -93,14 +140,20 @@ window.addEventListener("click", function(e){
     modal.style.display = "none";
   }
 })
+
+var verRecomendaciones = document.querySelector(".recon")
+
+var recomendadas = document.querySelector(".rr1")
+
+
+if (display = "none") {
+  verRecomendaciones.onclick = function () {
+     recomendadas.style.display = "flex";
+ }
+}
+else {
+  verRecomendaciones.onclick = function () {
+    recomendadas.style.display = "none";
+  }
+}
 })
-/*
-
-"<div class="total"><div class="imagen"><img src="+ +" alt=""></div><div class="detalle"><div class="display">
-<h2>TITULO  DE LA SERIE</h2><h4>CANITAD DE ESTRELLAS<ion-icon name="star"></ion-icon></h4></div>
-<h3>AÑO</h3><h6>GENEROS</h6><h6 class=""> duracion</h6><h6 class=""> actores principales</h6><h6 class=""> Lenguaje orignial </h6><h6>descripcion</h6>
-<p>Resumen: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-</div>"
-
-*/
