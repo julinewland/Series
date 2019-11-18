@@ -56,7 +56,7 @@ window.onload = function() {
 
 
 
-}
+
 
 fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c288e33c9&language=en-US&page=1")
 .then(function(response) {
@@ -76,3 +76,19 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
 .catch(function(error) {
   alert("Error, perdon, vuelva mas tarde")
 })
+
+//function validar(){
+
+//  var buscador = document.querySelector(".white"); ¿NO TIENE QEU SER EN SUBMIT?
+
+//  if(buscador.value == ! /^[a-z]{3}$/i.test(unitBrief) || buscador.value != ""){
+
+//    setTimeout('validar()',3000)
+//    alert("introducí al menos 4 caracteres")
+
+//  }
+//  else{
+
+  }
+}
+}

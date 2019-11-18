@@ -19,7 +19,7 @@ console.log(respuesta.results);
 
   for (var i = 0; i < serie.length; i++) {
     //OJO, CAMBIAR
-      div.innerHTML += "<div class='punt'><a href=detalle.html?"+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
+      div.innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
 
       //document.querySelector(".textof").innerHTML += "<h2>"+serie[].genres+":</h2>"
   }

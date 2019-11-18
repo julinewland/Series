@@ -81,16 +81,13 @@ form .white{
 }
 
 .imag img{
-  width: 35px;
+  width: 100%;
 }
 
 .imag{
-  width: 5%;
-  padding-right: 5%;
-}
-
-.name{
-  padding-right: 3%;
+  width: 80px;
+  height: 80px;
+  padding-right:10px;
 }
 
 

@@ -30,7 +30,6 @@ background-color: rgba(255, 255, 255, 0.05);
   background-repeat: no-repeat;
 }
 
-
 .textof h3{
   text-transform: uppercase;
   font-size: 3vw;
@@ -234,9 +233,6 @@ ul li ion-icon:hover{
   color: rgb(235, 99, 107);
 }
 
-.favsemana img.{
-
-}
 
 .detalle h2{
   text-transform: uppercase;
@@ -338,16 +334,13 @@ form .white{
 }
 
 .imag img{
-  width: 35px;
+  width: 100%;
 }
 
 .imag{
-  width: 5%;
-  padding-right: 5%;
-}
-
-.name{
-  padding-right: 3%;
+  width: 80px;
+  height: 80px;
+  padding-right:10px;
 }
 
 @media (max-width: 450px){
@@ -401,6 +394,9 @@ form .white{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     }
 
+    .navegador li{
+        width: 100%;
+      }
 
 }
 @media (min-width: 451px) and (max-width: 600px){
@@ -429,7 +425,24 @@ form .white{
     .detalle p{
       font-size: 10px;
     }
+
+    ul.navegador{
+      width: 100%;
+      padding-left: 0;
+    }
+
+    ul.navegador li{
+      width: 100%;
+      margin-left: 25%;
+      margin-right: 45%;
+      border: solid 1px red;
+      padding: 20px;
+
+
+    }
+
 }
+
 
 @media (min-width: 601px) and (max-width: 750px){
 
@@ -457,6 +470,14 @@ form .white{
     }
     .detalle p{
       font-size: 13px;
+    }
+
+    ul.navegador{
+      width: 100%;
+    }
+
+    ul.navegador li{
+      width: 100%;
     }
 }
 

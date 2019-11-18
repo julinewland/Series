@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
     var anio = respuesta.first_air_date;
     var poster = respuesta.poster_path;
     var generos = respuesta.genres[0].name;
+    var generoId = respuesta.genres[0].id;
     var estrellas = respuesta.vote_average;
     var lenguajeOriginal = respuesta.original_language;
     var sinopsis = respuesta.overview;
@@ -27,7 +28,7 @@ window.addEventListener("load", function() {
     var total = document.querySelector("div.total");
     total.innerHTML += `<div class="total"><div class="imagen"><img src="http://image.tmdb.org/t/p/w200/`+ poster + `" alt=""></div><div class="detalle"><div class="display">
     <h2>`+nombre +`</h2><h4>`+estrellas+`<ion-icon name="star"></ion-icon></h4></div>
-    <h3>`+ anio +`</h3><h6>Genero: `+generos+`</h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
+    <h3>`+ anio +`</h3><h6>Genero: <a href=ungenero.html?id=`+ generoId +`>`+generos+`</a></h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
     <p>`+ sinopsis +`</p></div></div>`
 })
   console.log("OK");
@@ -54,10 +55,25 @@ for (var i = 0; i <5; i++) {
   })
 
 
+var modal = document.querySelector(".modal")
+var cerrar = document.querySelector(".close")
+var abrir = document.querySelector(".trailer")
+var flex = document.querySelector(".flex")
 
 
+abrir.addEventListener("click", function(){
+  modal.style.display = "block";
+});
 
+cerrar.addEventListener("click", function(){
+  modal.style.display = "none";
+})
 
+window.addEventListener("click", function(e){
+  if (e.target == flex){
+    modal.style.display = "none";
+  }
+})
 })
 /*
 

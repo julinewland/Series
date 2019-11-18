@@ -182,9 +182,13 @@ list-style-type: none;
   color: gold;
 }
 
+form{
+  display: inline;
+}
 
 ul .buscar{
   padding-right: 30px;
+  display: inline;
 }
 
 ul li ion-icon:hover{
@@ -224,18 +228,38 @@ form .white{
   }
 
   .imag img{
-    width: 35px;
+    width: 100%;
   }
 
   .imag{
-    width: 5%;
-    padding-right: 5%;
+    width: 80px;
+    height: 80px;
+    padding-right:10px;
   }
 
-  .name{
-    padding-right: 3%;
+
+  @media (max-width: 450px){
+  .punt{
+    width: 45%;
   }
 
-@media (min-width: 451px) and (max-width: 750px){}
+  }
+  @media (min-width: 451px) and (max-width: 600px){
+    .punt{
+      width: 30%;
+    }
+  }
 
-@media (max-width: 450px){}
+  @media (min-width: 601px) and (max-width: 750px){
+    .punt{
+      width: 22%;
+    }
+
+  }
+
+  @media (min-width: 751px) and (max-width: 1000px){
+    .punt{
+      width: 18%;
+    }
+
+  }
