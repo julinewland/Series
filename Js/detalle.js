@@ -2,7 +2,7 @@
 window.addEventListener("load", function() {
   console.log("OK");
   var idGenero = new URLSearchParams(location.search).get("id");
-  fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=es")
+  fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=Es")
   .then(function(response) {
     return response.json();
   })
@@ -53,6 +53,25 @@ for (var i = 0; i <5; i++) {
   .catch(function(error) {
     alert("Error, perdon, vuelva mas tarde")
   })
+
+  fetch("https://api.themoviedb.org/3/tv/"+ idGenero +"/videos?api_key=9901ee414425659325dc091c288e33c9&language=en-US")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(respuesta) {
+    var trailer = respuesta.results[0]
+    console.log(trailer);
+    var video = trailer.key
+
+    document.querySelector(".referencia").innerHTML += "<iframe width='560' height='315' src='https://www.youtube.com/embed/" + video + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+
+
+  })
+
+  .catch(function(error) {
+    alert("Error, perdon, vuelva mas tarde")
+  })
+
 
 
 var modal = document.querySelector(".modal")

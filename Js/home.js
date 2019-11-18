@@ -77,11 +77,9 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
   alert("Error, perdon, vuelva mas tarde")
 })
 
-//function validar(){
-
-//  var buscador = document.querySelector(".white"); ¿NO TIENE QEU SER EN SUBMIT?
-
-//  if(buscador.value == ! /^[a-z]{3}$/i.test(unitBrief) || buscador.value != ""){
+//function validarLongitud(){
+//  var buscador = document.querySelector(".white");
+//  if(buscador.value == ! /^[a-z]{3}$/i.test(unitBrief) && buscador.value != ""){
 
 //    setTimeout('validar()',3000)
 //    alert("introducí al menos 4 caracteres")
@@ -90,5 +88,3 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
 //  else{
 
   }
-}
-}

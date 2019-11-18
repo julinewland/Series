@@ -220,11 +220,11 @@ form .white{
   .footer{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.05);
     padding-top: 3%;
     padding-bottom: 3%;
     margin-top: 2%;
     justify-content: flex-end;
+
   }
 
   .imag img{
@@ -237,6 +237,9 @@ form .white{
     padding-right:10px;
   }
 
+ div.name{
+   padding-right: 10px;
+ }
 
   @media (max-width: 450px){
   .punt{
