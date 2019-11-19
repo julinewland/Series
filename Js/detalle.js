@@ -66,7 +66,7 @@ window.addEventListener("load", function() {
     var total = document.querySelector("div.total");
     total.innerHTML += `<div class="total"><div class="imagen"><img src="http://image.tmdb.org/t/p/w200/`+ poster + `" alt=""></div><div class="detalle"><div class="display">
     <h2>`+nombre +`</h2><h4>`+estrellas+`<ion-icon name="star"></ion-icon></h4></div>
-    <h3>`+ anio +`</h3><h6>Genero: <a href=ungenero.html?id=`+ generoId +`>`+generos+`</a></h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
+    <h3>`+ anio +`</h3><h6>Genero: <a href=ungenero.html?id=`+ generoId + "&tituloGenero=" + generos +`>`+generos+`</a></h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
     <p>`+ sinopsis +`</p></div></div>`
 })
   console.log("OK");
@@ -141,19 +141,28 @@ window.addEventListener("click", function(e){
   }
 })
 
-var verRecomendaciones = document.querySelector(".recon")
-
+var verRecomendaciones = document.querySelector("h2.recon")
 var recomendadas = document.querySelector(".rr1")
 
-
-if (display = "none") {
-  verRecomendaciones.onclick = function () {
-     recomendadas.style.display = "flex";
- }
-}
-else {
-  verRecomendaciones.onclick = function () {
-    recomendadas.style.display = "none";
+verRecomendaciones.addEventListener('click', function() {
+  if (recomendadas.style.display == "none") {
+    recomendadas.style.display = "flex"
   }
-}
+  else {
+    recomendadas.style.display = "none"
+  }
+})
+
+// if (display = "none") {
+//   verRecomendaciones.onclick = function () {
+//      recomendadas.style.display = "flex";
+//  }
+// }
+// else {
+//   verRecomendaciones.onclick = function () {
+//     recomendadas.style.display = "none";
+//   }
+// }
+
+
 })
