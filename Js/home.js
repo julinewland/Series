@@ -81,8 +81,11 @@ alert("introducí al menos 3 caracteres")
 
 buscar.onsubmit = function(event){
   if(buscado.value.length < 3) {
-    event.preventDefault()
-    setTimeout(minimoTres,1000)}
+    event.preventDefault();
+    document.querySelector(".alert").innerHTML += "<div class='aviso' uk-alert><a class='uk-alert-close' uk-close></a><p>Por favor introducí al menos tres caracteres</p></div>"
+    setTimeout(function (){
+      document.querySelector(".alert").style.display = "none"},
+    3000)}
   else {
 
 

@@ -17,6 +17,12 @@ justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
 }
 
+.alert{
+  position: fixed;
+  top: 40%;
+  left: 40%;
+}
+
 .navegador a:hover{
   color: rgb(235, 99, 107);
 }
