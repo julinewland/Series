@@ -48,7 +48,11 @@ list-style-type: none;
   font-weight: 500;
 }
 
-
+h2.titulo-genero {
+  margin-left: 2%;
+  margin-top: 16px;
+  margin-bottom: -9px
+}
 
 .textof{
   width: 65%;

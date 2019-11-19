@@ -158,6 +158,6 @@ form .white{
   padding-right:10px;
 }
 
-@media (min-width: 451px) and (max-width: 750px){}
+@media (min-width: 601px) and (max-width: 750px){}
 
 @media (max-width: 450px){}
