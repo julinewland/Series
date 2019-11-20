@@ -101,7 +101,25 @@ ul li img{
   margin-top: 20%;
 }
 
-form{
+.buscador form select{
+  width: 70%;
+}
+
+.buscador form button{
+  width: 70%;
+}
+
+.edicion{
+  margin: 8px;
+}
+
+.buscador form label{
+width: 70%;
+display: block;
+}
+
+
+.buscadors{
   display: inline;
 }
 form .white{
@@ -109,6 +127,12 @@ form .white{
   border: 0px;
   height: 25px;
 }
+
+.avanzado{
+  display: block;
+  width: 70%;
+}
+
 
 .lupita{
   position: relative;
@@ -146,6 +170,9 @@ div.name{
   padding-right:10px;
 }
 
+.ver{
+  display: none;
+}
 
 @media (min-width: 451px) and (max-width: 750px){}
 

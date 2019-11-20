@@ -67,7 +67,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
 
   var favs = respuesta.results;
   for (var i = 0; i < 1; i++) {
-    document.querySelector(".favsemana").innerHTML += "<div class='total'><div class='imagen'><img src=http://image.tmdb.org/t/p/w200"+ favs[i].poster_path +"></div><div class='detalle'><div class='display'><h2 class='copia'>"+ favs[i].original_name +"</h2><h4 class='copia'>"+favs[i].vote_average+"<ion-icon name='star'></ion-icon></h4></div><h3 class='copia'>"+ favs[i].first_air_date +"</h3><p class='copia'>"+ favs[i].overview+ "</p></div></div>"
+    document.querySelector(".favsemana").innerHTML += "<div class='total'><div class='imagen'><a href=detalle.html?id="+ favs[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ favs[i].poster_path +"></a></div><div class='detalle'><div class='display'><h2 class='copia'>"+ favs[i].original_name +"</h2><h4 class='copia'>"+favs[i].vote_average+"<ion-icon name='star'></ion-icon></h4></div><h3 class='copia'>"+ favs[i].first_air_date +"</h3><p class='copia'>"+ favs[i].overview+ "</p></div></div>"
 
     document.querySelector(".fondo").style.backgroundImage = "url('http://image.tmdb.org/t/p/w200"+ favs[i].backdrop_path +"')"
 }

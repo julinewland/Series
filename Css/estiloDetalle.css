@@ -296,8 +296,8 @@ h6 a:hover{
 }
 
 @keyframes modal {
-  from{opacity: 0}
-  to{opacity: 1}
+  from{opacity: 0;top: -200px}
+  to{opacity: 1; top: 0px;}
 }
 
 .contenedor{
@@ -350,6 +350,101 @@ h6 a:hover{
       margin-bottom: 2%;
   }
 
+  .navegador li{
+      width: 100%;
+    }
+
+    ul.navegador{
+      width: 100%;
+      padding-left: 0;
+    }
+
+    ul.navegador li{
+      width: 100%;
+      margin-left: 20px;;
+      margin-right: 45%;
+      padding: 10px;
+      display: block;
+
+    }
+
+    ul.navegador{
+      margin-bottom: 0;
+    }
+  p.copia{
+    font-size: 13px;
+  }
+
+h4{
+  font-size: 15px;
+}
+
+h2.recon{
+  font-size: 15px;
+}
+
+div.flex{
+  top:0;
+}
+
+.flex .video{
+  margin-top: 0;
+  height: 200px;
+}
+
+.flex{
+  height: 200px;
+}
+
+}
+
+@media (min-width: 451px) and (max-width: 600px){
+
+  ul.navegador{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    margin-left: 20px;;
+    margin-right: 45%;
+    padding: 10px;
+    display: block;
+
+  }
+
+  ul li img{
+    width: 15%;
+  }
+
+  ul.navegador{
+    margin-bottom: 0;
+  }
+
+  .detalle h6 {
+    font-size: 15px;
+  }
+
+  .detalle p{
+    font-size: 12px;
+  }
+  div.flex{
+    top:0;
+  }
+
+  .flex .video{
+    margin-top: 0;
+    height: 200px;
+  }
+
+  .flex{
+    height: 200px;
+  }
+
+  h2.recon{
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 750px){
@@ -358,3 +453,52 @@ h6 a:hover{
     position: relative;
   width: 32%;
     }
+
+    ul.navegador{
+      width: 100%;
+    }
+
+    ul.navegador li{
+      width: 100%;
+      padding-left: 15px;
+    }
+
+    ul li a{
+      font-size: 14px;
+    }
+
+  ul li img{
+    width: 12%;
+  }
+  div.flex{
+    top:0;
+  }
+
+  .flex .video{
+    margin-top: 0;
+    height: 200px;
+  }
+
+  .flex{
+    height: 200px;
+  }
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+  div.flex{
+    top:0;
+  }
+
+  .flex .video{
+    margin-top: 0;
+    height: 200px;
+  }
+
+  .flex{
+    height: 200px;
+  }
+
+
+
+}

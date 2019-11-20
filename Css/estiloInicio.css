@@ -17,6 +17,11 @@ justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
 }
 
+
+form.buscadors{
+  width: 127px;
+}
+
 .alert{
   position: fixed;
   top: 40%;
@@ -411,6 +416,27 @@ div.name{
         width: 100%;
       }
 
+      ul.navegador{
+        width: 100%;
+        padding-left: 0;
+      }
+
+      ul.navegador li{
+        width: 100%;
+        margin-left: 20px;;
+        margin-right: 45%;
+        padding: 10px;
+        display: block;
+
+      }
+
+      ul.navegador{
+        margin-bottom: 0;
+      }
+    p.copia{
+      font-size: 13px;
+    }
+
 }
 @media (min-width: 451px) and (max-width: 600px){
   .punt{
@@ -446,12 +472,19 @@ div.name{
 
     ul.navegador li{
       width: 100%;
-      margin-left: 25%;
+      margin-left: 20px;;
       margin-right: 45%;
-      border: solid 1px red;
       padding: 10px;
       display: block;
 
+    }
+
+    ul li img{
+      width: 15%;
+    }
+
+    ul.navegador{
+      margin-bottom: 0;
     }
 
 }
@@ -491,7 +524,16 @@ div.name{
 
     ul.navegador li{
       width: 100%;
+      padding-left: 15px;
     }
+
+    ul li a{
+      font-size: 14px;
+    }
+
+  ul li img{
+    width: 12%;
+  }
 }
 
 
@@ -516,4 +558,7 @@ div.name{
   .punt{
     width: 19%;;
     }
+  .navegador li {
+    padding-left: 35px;
+  }
 }
