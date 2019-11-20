@@ -42,7 +42,7 @@ if(generoE != null){
   generoE = "";
 }
 
-  fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c288e33c9&language=en-US" + orden + anio + genero + generoE)
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c288e33c9&language=en-US&sort_by=" + orden + anio + genero + generoE)
   .then(function(response) {
     return response.json();
   })

@@ -153,6 +153,20 @@ verRecomendaciones.addEventListener('click', function() {
   }
 })
 
+var buscar = document.querySelector(".buscadors") //ESTO ES el formT
+var buscado = document.querySelector(".white") //ESTO ES EL INPUT PARA ESCRIBIR
+
+function minimoTres(){
+alert("introducí al menos 3 caracteres")
+}
+
+buscar.onsubmit = function(event){
+  if(buscado.value.length < 3) {
+    event.preventDefault();
+    $.notify("Introducí por lo menos tres caracteres", {autoHideDelay: 3000});
+  }
+}
+
 // if (display = "none") {
 //   verRecomendaciones.onclick = function () {
 //      recomendadas.style.display = "flex";

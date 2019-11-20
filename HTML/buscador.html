@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../Css/estilobuscador.css">
@@ -28,15 +33,15 @@
       <form class="avanzado" action="resultados.html" method="get">
 
         <select class="edicion" class="genero" name="genero">
-          <option hidden>Selecciona el genero</option>
+          <option value="">Selecciona el genero</option>
         </select>
 
         <select class="edicion" class="genero-excluido" name="gen-e">
-          <option hidden>Selecciona el genero excluido</option>
+          <option value="">Selecciona el genero excluido</option>
         </select>
 
         <select class "edicion" class="orden" name="orden">
-            <option value="vacio">Selecciona un orden</option>
+            <option value="">Selecciona un orden</option>
             <option value="vote_average.asc">Voto Ascendente</option>
             <option value="vote_average.desc">Voto Descendente</option>
             <option value="first_air_date.asc">Fecha Ascendente</option>
@@ -45,12 +50,32 @@
             <option value="popularity.desc">Popularidad Descendente</option>
         </select>
 
-        <input class="edicion" class="Año" type="number" name="Año" placeholder="Ej: 1999">
+        <select class="" name="Año">
+          <option value=""></option>
+          <option value="1999">1999</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+          <option value="2006">2006</option>
+
+        </select>
 
         <button type="submit">Buscar</button>
 
       </form>
+
+
     </div>
+
+    <div class="total">
+
+    </div>
+
+
+
     <script src="../Js/buscador.js" charset="utf-8"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- <script src="../Js/buscadorsimple.js" charset="utf-8"></script> -->

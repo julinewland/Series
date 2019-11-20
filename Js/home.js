@@ -72,7 +72,7 @@ fetch("https://api.themoviedb.org/3/tv/popular?api_key=9901ee414425659325dc091c2
     document.querySelector(".fondo").style.backgroundImage = "url('http://image.tmdb.org/t/p/w200"+ favs[i].backdrop_path +"')"
 }
 })
-  var buscar = document.querySelector(".buscadors") //ESTO ES el formT
+var buscar = document.querySelector(".buscadors") //ESTO ES el formT
 var buscado = document.querySelector(".white") //ESTO ES EL INPUT PARA ESCRIBIR
 
 function minimoTres(){
@@ -82,14 +82,7 @@ alert("introducí al menos 3 caracteres")
 buscar.onsubmit = function(event){
   if(buscado.value.length < 3) {
     event.preventDefault();
-    document.querySelector(".alert").innerHTML += "<div class='aviso' uk-alert><a class='uk-alert-close' uk-close></a><p>Por favor introducí al menos tres caracteres</p></div>"
-    setTimeout(function (){
-      document.querySelector(".alert").style.display = "none"},
-    3000)}
-  else {
-
-
-
+    $.notify("Introducí por lo menos tres caracteres", {autoHideDelay: 3000});
   }
 }
 }

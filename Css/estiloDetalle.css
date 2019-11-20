@@ -262,11 +262,11 @@ h6 a:hover{
 
 .video{
   position: relative;
+  top: 100px;
   z-index: 1000;
   background-color: rgba(255, 255, 255);
   margin: auto;
-  width: 30%;
-  height: 30%;
+  width: 233px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   animation-name: modal;
   animation-duration: 2s;

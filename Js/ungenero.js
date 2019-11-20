@@ -44,7 +44,19 @@ window.onload = function() {
 
 // le tenes que agregar para que busco en un genero.html el id que sea relfejado en el otro html para que te busque en cierto genero ciertas perliculas. <a href=ungenero.html?id= tiene que estar vinculado con el js de genero.
 }
+var buscar = document.querySelector(".buscadors") //ESTO ES el formT
+var buscado = document.querySelector(".white") //ESTO ES EL INPUT PARA ESCRIBIR
 
+function minimoTres(){
+alert("introducí al menos 3 caracteres")
+}
+
+buscar.onsubmit = function(event){
+  if(buscado.value.length < 3) {
+    event.preventDefault();
+    $.notify("Introducí por lo menos tres caracteres", {autoHideDelay: 3000});
+  }
+}
 
 
 

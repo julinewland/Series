@@ -449,8 +449,8 @@ div.name{
       margin-left: 25%;
       margin-right: 45%;
       border: solid 1px red;
-      padding: 20px;
-
+      padding: 10px;
+      display: block;
 
     }
 
