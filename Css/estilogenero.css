@@ -244,10 +244,53 @@ div.name{
   width: 45%;
 }
 
+.navegador li{
+width: 100%;
+}
+
+ul.navegador{
+  width: 100%;
+  padding-left: 0;
+}
+
+ul.navegador li{
+  width: 100%;
+  margin-left: 20px;;
+  margin-right: 45%;
+  padding: 10px;
+  display: block;
+}
+ul.navegador{
+margin-bottom: 0;
+
+}
+
 }
 @media (min-width: 451px) and (max-width: 600px){
   .genero{
     width: 45%;
+  }
+
+  ul.navegador{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    margin-left: 20px;;
+    margin-right: 45%;
+    padding: 10px;
+    display: block;
+
+  }
+
+  ul li img{
+    width: 15%;
+  }
+
+  ul.navegador{
+    margin-bottom: 0;
   }
 }
 
@@ -255,12 +298,31 @@ div.name{
   .genero{
     width: 30%;
   }
+  ul.navegador{
+    width: 100%;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  ul li a{
+    font-size: 14px;
+  }
+
+ul li img{
+  width: 12%;
+}
 
 }
 
 @media (min-width: 751px) and (max-width: 1000px){
   .genero{
     width: 22%;
+  }
+  .navegador li {
+    padding-left: 35px;
   }
 
 }

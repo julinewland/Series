@@ -170,6 +170,80 @@ form .white{
   padding-right:10px;
 }
 
-@media (min-width: 601px) and (max-width: 750px){}
+@media (max-width: 450px){
 
-@media (max-width: 450px){}
+.navegador li{
+width: 100%;
+}
+
+ul.navegador{
+  width: 100%;
+  padding-left: 0;
+}
+
+ul.navegador li{
+  width: 100%;
+  margin-left: 20px;;
+  margin-right: 45%;
+  padding: 10px;
+  display: block;
+}
+ul.navegador{
+margin-bottom: 0;
+
+}
+
+}
+@media (min-width: 451px) and (max-width: 600px){
+
+  ul.navegador{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    margin-left: 20px;;
+    margin-right: 45%;
+    padding: 10px;
+    display: block;
+
+  }
+
+  ul li img{
+    width: 15%;
+  }
+
+  ul.navegador{
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 750px){
+
+  ul.navegador{
+    width: 100%;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  ul li a{
+    font-size: 14px;
+  }
+
+ul li img{
+  width: 12%;
+}
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+
+  .navegador li {
+    padding-left: 35px;
+  }
+
+}

@@ -1,8 +1,9 @@
 
 window.addEventListener("load", function() {
+  var numeroPagina = 1
   console.log("OK");
   var idGenero = new URLSearchParams(location.search).get("id");
-  fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=Es")
+  fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=Es&page="+ numeroPagina)
   .then(function(response) {
     return response.json();
   })

@@ -39,7 +39,8 @@ window.addEventListener('load', function() {
     var generoE =document.querySelector("select[name='gen-e']").options[document.querySelector("select[name='gen-e']").selectedIndex].value;
 
 //validacion para que solo uno de los generos este completo
-    if (genero == "" || generoE == "" ) {
+    if (genero != generoE ) {
+      //  if (genero == "" || generoE == "" ) {
       if (orden == "" && anio == "" && genero == "" && generoE == "") {
         $.notify("Selecciona al menos un elemento", {autoHideDelay: 3000});
       } else {
@@ -63,7 +64,7 @@ window.addEventListener('load', function() {
         })
       }
     } else {
-      $.notify("Selecciona un solo genero", {autoHideDelay: 3000});
+      $.notify("Selecciona generos distintos", {autoHideDelay: 3000});
 
     }
 
