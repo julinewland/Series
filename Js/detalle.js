@@ -2,8 +2,8 @@
 window.addEventListener("load", function() {
   var numeroPagina = 1
   console.log("OK");
-  var idGenero = new URLSearchParams(location.search).get("id");
-  fetch("https://api.themoviedb.org/3/tv/" + idGenero + "?api_key=9901ee414425659325dc091c288e33c9&language=Es&page="+ numeroPagina)
+  var idSerie = new URLSearchParams(location.search).get("id");
+  fetch("https://api.themoviedb.org/3/tv/" + idSerie + "?api_key=9901ee414425659325dc091c288e33c9&language=Es&page="+ numeroPagina)
   .then(function(response) {
     return response.json();
   })
@@ -178,6 +178,65 @@ buscar.onsubmit = function(event){
 //     recomendadas.style.display = "none";
 //   }
 // }
+
+
+
+
+
+
+
+//Paso 1: Leo Storage
+var recuperoStorage = localStorage.getItem("seriesFavoritas");
+
+
+// Si todavía no tenía gifs favoritos
+if (recuperoStorage == null) {
+// crear una lista vacia
+
+var seriesFavoritas = [];
+} else {
+// Descomprimo el TEXTO que tenia en storage en el array que necesito trabajar
+
+seriesFavoritas = JSON.parse(recuperoStorage);
+}
+
+  var datos = new URLSearchParams(location.search);
+  var idSerie = datos.get("id");
+
+  
+
+  fetch("https://api.themoviedb.org/3/tv/" + idSerie + "?api_key=9901ee414425659325dc091c288e33c9&language=Es&page")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(results) {
+      console.log(results);
+
+    })
+
+    document.querySelector("button").onclick = function() {
+      //Paso 2: Modificar la informacion
+      // Si el gif ya era favorito
+      if (seriesFavoritas.includes(idSerie)) {
+        // Lo quito
+        var index = seriesFavoritas.indexOf(idSerie);
+        seriesFavoritas.splice(index, 1);
+        document.querySelector("button").innerHTML = "Agregar a favorito";
+      } else {
+        //Lo agrego
+        seriesFavoritas.push(idSerie);
+        document.querySelector("button").innerHTML = "Quitar de favoritos";
+      }
+      //Paso 3: Escribir en storage
+      var informacionStorage = JSON.stringify(seriesFavoritas);
+      localStorage.setItem("seriesFavoritas", informacionStorage);
+      console.log(localStorage);
+    }
+
+
+
+
+
 
 
 })
