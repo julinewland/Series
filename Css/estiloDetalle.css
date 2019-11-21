@@ -124,19 +124,21 @@ div.name{
   padding: 5px;
   width: 18%;
   color: white;
-  background-color: rgb(235, 99, 107);
+
 }
 
 .trailer h4:hover{
   color: rgb(235, 99, 107);
   cursor: pointer;
-  background-color: white;
+  
 }
+
+
+
 
 h2.recon:hover {
   color: rgb(235, 99, 107);
   cursor: pointer;
-  background-color: white;
 }
 
 .recon{
@@ -146,7 +148,6 @@ h2.recon:hover {
   padding: 5px;
   width: 20%;
   color: white;
-  background-color: rgb(235, 99, 107);
 }
 
 div.rr1 {

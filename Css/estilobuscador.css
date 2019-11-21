@@ -186,8 +186,6 @@ div.name{
 .ver h3:hover {
   color: rgb(235, 99, 107);
   cursor: pointer;
-
-
 }
 @media (max-width: 450px){
 

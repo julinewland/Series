@@ -14,7 +14,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c
 .then(function(respuesta) {
   console.log(respuesta);
 
-
+//VINCULACION CON APPI
 
   var serie = respuesta.results;
 
@@ -27,7 +27,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c
         document.querySelector('h2.titulo-genero').innerText = tituloGenero
         div.innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
 
-        //document.querySelector(".textof").innerHTML += "<h2>"+serie[].genres+":</h2>"
+        //para que vaya cambiando el genero Y LAS PELICULAS del genero segun el click que hiciste en el genero general.
     }
 
   }
@@ -63,11 +63,13 @@ buscar.onsubmit = function(event){
     $.notify("Introducí por lo menos tres caracteres", {autoHideDelay: 3000});
   }
 }
+// BUSCADOR INTROUCCIR MAS LETRAS PARA QUE SEA MAS FACIL PARA EL BUSCADOR. 
 
 verMas.onclick = function(){
 numeroPagina++;
 
 fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c288e33c9&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres="+ idGen +"&page=" + numeroPagina)
+// ViNCULACION CON APPI CON EL NUMERO DE PAGINA PARA EL TITULO DEL GENERO.
 
 .then(function(response) {
   return response.json();
@@ -84,6 +86,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c
     if(serie[i].vote_average != 0 && serie[i].poster_path != null){
       div.innerHTML += "<div class='punt'><a href=detalle.html?id="+ serie[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ serie[i].poster_path +"></a><h5>" + serie[i].name + "</h5><h6>"+serie[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
     }
+// pARA QUE TE MUESTRE MAS SERIES D EUN GENERO CUANDO PONES "VER MAS"
 
       //document.querySelector(".textof").innerHTML += "<h2>"+serie[].genres+":</h2>"
   }
