@@ -181,13 +181,13 @@ div.name{
   padding: 5px;
   width: 110px;
   color: white;
-  background-color: rgb(235, 99, 107);
 }
 
-.ver h3:hover{
+.ver h3:hover {
   color: rgb(235, 99, 107);
   cursor: pointer;
-  background-color: white;
+
+
 }
 @media (max-width: 450px){
 
