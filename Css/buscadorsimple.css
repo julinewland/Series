@@ -170,6 +170,25 @@ form .white{
   padding-right:10px;
 }
 
+.ver h3{
+  font-size: 20px;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  padding: 5px;
+  width: 110px;
+  color: white;
+  background-color: rgb(235, 99, 107);
+}
+
+.ver h3:hover{
+  color: rgb(235, 99, 107);
+  cursor: pointer;
+  background-color: white;
+}
+
+.ver{
+  display: none;
+}
 @media (max-width: 450px){
 
 .navegador li{
@@ -190,6 +209,16 @@ ul.navegador li{
 }
 ul.navegador{
 margin-bottom: 0;
+
+}
+
+.buscadornuevo {
+  width: 200px;
+}
+
+form.buscadornuevo.input.white{
+  width: 200px;
+  margin-left: 0px;
 
 }
 
@@ -216,6 +245,16 @@ margin-bottom: 0;
 
   ul.navegador{
     margin-bottom: 0;
+  }
+
+  .buscadornuevo {
+    width: 200px;
+  }
+
+  form.buscadornuevo.input.white{
+    width: 200px;
+    margin-left: 0px;
+
   }
 }
 

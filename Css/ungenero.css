@@ -245,6 +245,22 @@ form .white{
    padding-right: 10px;
  }
 
+.ver h3{
+  font-size: 20px;
+  margin-left: 4%;
+  margin-bottom: 4%;
+  padding: 5px;
+  width: 110px;
+  color: white;
+  background-color: rgb(235, 99, 107);
+}
+
+.ver h3:hover{
+  color: rgb(235, 99, 107);
+  cursor: pointer;
+  background-color: white;
+}
+
   @media (max-width: 450px){
   .punt{
     width: 45%;

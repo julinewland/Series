@@ -39,10 +39,13 @@ window.addEventListener('load', function() {
     var generoE =document.querySelector("select[name='gen-e']").options[document.querySelector("select[name='gen-e']").selectedIndex].value;
 
 //validacion para que solo uno de los generos este completo
-    if (genero != generoE ) {
+
+
+
+    if (genero != generoE || generoE) {
       //  if (genero == "" || generoE == "" ) {
       if (orden == "" && anio == "" && genero == "" && generoE == "") {
-        $.notify("Selecciona al menos un elemento", {autoHideDelay: 3000});
+        $.notify("Seleccion al menos un elemento", {autoHideDelay: 3000});
       } else {
 
         fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c288e33c9&language=en-US&sort_by=" + orden +"&air_date.gte="+ anio + "&with_genres=" + genero + "&without_genres=" + generoE + "&page=" +  numeroPagina)
@@ -56,7 +59,7 @@ window.addEventListener('load', function() {
              if(busqueda[i].vote_average != 0 && busqueda[i].poster_path != null){{
              document.querySelector(".total").innerHTML += "<div class='punt'><a href=detalle.html?id="+ busqueda[i].id +"><img src=http://image.tmdb.org/t/p/w200"+ busqueda[i].poster_path+"></a><h5>"+busqueda[i].name + "</h5><h6>"+busqueda[i].vote_average+"<ion-icon name='star'></ion-icon></h6></div>"
 
-        document.querySelector(".ver").style.display = "block";
+             document.querySelector(".ver").style.display = "block";
             }
           }
 

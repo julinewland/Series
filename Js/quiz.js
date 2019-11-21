@@ -86,7 +86,7 @@ window.onload = function (){
       <h3>`+ anio +`</h3><h6>Genero: <a href=ungenero.html?id=`+ generoId + "&tituloGenero=" + generos +`>`+generos+`</a></h6><h6 class="">Lenguaje original: `+ lenguajeOriginal +`</h6>
       <p>`+ sinopsis +`</p></div></div>`
 
-      document.querySelector(".titulo").innerHTML += "<br><h3>Titulos similares para "+ nombre +":</h3>"
+      // document.querySelector(".titulo").innerHTML += "<br><h3>Titulos similares para "+ nombre +":</h3>"
 
     }else {
       random++;

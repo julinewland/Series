@@ -19,7 +19,9 @@ window.onload = function(){
         console.log(serie);
 
         if (serie.length == 0){
-          document.querySelector(".total").innerHTML += "<h2> No se han encontrado resultados para '" + loBuscado + "', por favor intenta denuevo.</h2><div class='buscadorn'><form class='buscadornuevo' action='buscadorsimple.html' method='get'><input type='text' class='white' name='buscador' requiered value=''><input type='submit' class='lupa' name='' value=''><img class='lupita' src='../Archivos/Lupa.png' alt=''></form><div>"
+          document.querySelector(".total").innerHTML += "<h2> No se han encontrado resultados para '" + loBuscado + "', por favor intenta denuevo.</h2><div class='buscadorn'><form class='buscadornuevo' action='buscadorsimple.html' method='get'><input type='text' class='white' name='buscador' requiered value='' placeholder= 'Buscar.....'><input type='submit' class='lupa' name='' value=''></form><div>"
+
+          document.querySelector(".ver").style.display = "none"
         }
         else{
           document.querySelector(".resultado").innerHTML += "<h2>Resultado de '"+ loBuscado +"':</h2>"
