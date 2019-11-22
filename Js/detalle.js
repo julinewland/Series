@@ -203,7 +203,7 @@ seriesFavoritas = JSON.parse(recuperoStorage);
   var datos = new URLSearchParams(location.search);
   var idSerie = datos.get("id");
 
-  
+
 
   fetch("https://api.themoviedb.org/3/tv/" + idSerie + "?api_key=9901ee414425659325dc091c288e33c9&language=Es&page")
     .then(function(response) {
@@ -211,7 +211,7 @@ seriesFavoritas = JSON.parse(recuperoStorage);
     })
     .then(function(results) {
       console.log(results);
-
+      document.querySelector("button").innerHTML = "Agregar a favoritos";
     })
 
     document.querySelector("button").onclick = function() {
