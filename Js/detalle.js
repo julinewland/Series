@@ -117,7 +117,7 @@ for (var i = 0; i <5; i++) {
   })
 
   .catch(function(error) {
-    alert("Error, perdon, vuelva mas tarde")
+    console.log(error);
   })
 
 

@@ -42,10 +42,10 @@ window.addEventListener('load', function() {
 
 
 
-    if (genero != "" || generoE != "") {
-      //  if (genero == "" || generoE == "" ) {
+
+      if (genero == "" || generoE == "" ) {
       if (orden == "" && anio == "" && genero == "" && generoE == "") {
-        $.notify("Seleccion al menos un elemento", {autoHideDelay: 3000});
+        $.notify("selecciona por lo menos un elemento", {autoHideDelay: 3000});
       } else {
 
         fetch("https://api.themoviedb.org/3/discover/tv?api_key=9901ee414425659325dc091c288e33c9&language=en-US&sort_by=" + orden +"&air_date.gte="+ anio + "&with_genres=" + genero + "&without_genres=" + generoE + "&page=" +  numeroPagina)
@@ -67,7 +67,7 @@ window.addEventListener('load', function() {
         })
       }
     } else {
-      $.notify("Selecciona generos distintos", {autoHideDelay: 3000});
+      $.notify("Selecciona un solo selector de generos", {autoHideDelay: 3000});
 
     }
 

@@ -28,6 +28,26 @@ background-color: rgba(255, 255, 255, 0.05);
   margin-bottom: 4%;
 }
 
+.buscadores {
+  color: white;
+  background-color: rgba(235, 99, 107, 1) ;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: solid white 0px;
+}
+
+.buscadores:hover{
+  border: solid white 1px;
+  cursor: pointer;
+}
+
+.buttons {
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
 .punt img{
   width: 100%;
   -webkit-box-shadow: 0 3px 5px rgba(255, 255, 255, 0.1);
@@ -53,6 +73,10 @@ background-color: rgba(255, 255, 255, 0.05);
   /* left: 7%; */
   text-transform: uppercase;
   hyphens: auto;
+}
+
+.buscador form{
+  width: 70%;
 }
 
 .punt h6{
@@ -97,31 +121,40 @@ ul li img{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20%;
+  justify-content: center;
+  margin-top: 100px;
 }
 
-.buscador form select{
-  width: 70%;
+.buscador .seleccionar{
+  width: 100%;
+  justify-content: center;
+  display: block;
+  margin-right: 10px;
 }
 
 .buscador form button{
-  width: 70%;
-}
-
-.edicion{
-  margin: 8px;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .buscador form label{
-width: 70%;
+width: 100%;
 display: block;
+margin-bottom: 3px;
 }
 
+.buscador form select{
+width: 100%;
+height: 30px;
+margin-bottom: 7px;
+background-color:rgba(235, 99, 107, 1)
+}
 
 .buscadors{
   display: inline;
 }
+
 form .white{
   background-color: rgba(255, 255, 255, 0.7);
   border: 0px;
@@ -209,9 +242,17 @@ div.name{
   margin-bottom: 0;
 
   }
+
+  .punt{
+    width: 47%;
+    }
 }
 
 @media (min-width: 451px) and (max-width: 600px){
+
+  .punt{
+  width: 32%;
+    }
 
   ul.navegador{
     width: 100%;
@@ -238,6 +279,11 @@ div.name{
 
 @media (min-width: 601px) and (max-width: 750px){
 
+  .punt{
+    position: relative;
+  width: 32%;
+    }
+
   ul.navegador{
     width: 100%;
   }
@@ -257,6 +303,10 @@ ul li img{
 }
 
 @media (min-width: 751px) and (max-width: 1000px){
+
+  .punt{
+      width: 19%;;
+      }
 
   .navegador li {
     padding-left: 35px;
