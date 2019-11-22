@@ -313,13 +313,13 @@ ul li img{
   }
 }
 .buscadores {
-  color: rgb(235, 99, 107);
-  background-color: rgba(0, 0, 0, 0) ;
+  color: white;
+  background-color: rgba(235, 99, 107, 1) ;
   font-size: 15px;
   border-radius: 30px;
 }
 .buttons {
-  color: rgb(235, 99, 107);
+  color: white;
   background-color:rgba(0, 0, 0, 0);
   font-size: 15px;
   border-radius: 30px;
