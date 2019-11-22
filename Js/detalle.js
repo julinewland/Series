@@ -215,6 +215,7 @@ seriesFavoritas = JSON.parse(recuperoStorage);
     })
 
     document.querySelector("button").onclick = function() {
+    
       //Paso 2: Modificar la informacion
       // Si el gif ya era favorito
       if (seriesFavoritas.includes(idSerie)) {
