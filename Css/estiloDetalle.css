@@ -9,6 +9,7 @@ body {
   background-color: rgb(19, 23, 39);
   color: white;
     font-family: helvetica;
+
 }
 
 #barra{
@@ -16,6 +17,13 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
+}
+
+button {
+  color: rgb(235, 99, 107);
+  background-color: white;
+  font-size: 15px;
+  border-radius: 30px;
 }
 
 .navegador a:hover{
@@ -522,16 +530,6 @@ div.flex{
     height: 200px;
   }
 
-button {
-  color: white;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px
 
-}
 
 }
