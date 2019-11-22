@@ -426,6 +426,9 @@ div.flex{
 .flex{
   height: 200px;
 }
+.trailer h4{
+  font-size: 13px;
+}
 
 }
 
@@ -476,6 +479,11 @@ div.flex{
   h2.recon{
     font-size: 15px;
   }
+
+  .trailer h4{
+    font-size: 15px;
+  }
+
 }
 
 @media (min-width: 601px) and (max-width: 750px){
@@ -512,6 +520,15 @@ div.flex{
 
   .flex{
     height: 200px;
+  }
+
+  h2.recon{
+    font-size: 17px;
+  }
+
+
+  .trailer h4{
+    font-size: 17px;
   }
 
 }

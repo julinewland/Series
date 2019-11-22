@@ -16,6 +16,11 @@ justify-content: space-between;
 background-color: rgba(255, 255, 255, 0.05);
 }
 
+.contenedor{
+  width: 85%;
+  margin: 0 auto;
+}
+
 .favoritas{
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +64,13 @@ list-style-type: none;
   left: -26px;
   bottom: -7px;
 }
+
+form .white{
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0px;
+  height: 25px;
+}
+
 .lupa{
   background-image: url();
   position: relative;
@@ -127,4 +139,95 @@ div.name{
 }
 .punt h6 ion-icon{
   color: gold;
+}
+
+@media (max-width: 450px){
+.punt{
+  width: 47%;
+  }
+
+.navegador li{
+width: 100%;
+}
+
+ul.navegador{
+  width: 100%;
+  padding-left: 0;
+}
+
+ul.navegador li{
+  width: 100%;
+  margin-left: 20px;;
+  margin-right: 45%;
+  padding: 10px;
+  display: block;
+}
+ul.navegador{
+margin-bottom: 0;
+
+}
+
+}
+@media (min-width: 451px) and (max-width: 600px){
+  .punt{
+    position: relative;
+  width: 32%;
+    }
+
+  ul.navegador{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    margin-left: 20px;;
+    margin-right: 45%;
+    padding: 10px;
+    display: block;
+
+  }
+
+  ul li img{
+    width: 15%;
+  }
+
+  ul.navegador{
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 750px){
+  .punt{
+    position: relative;
+  width: 32%;
+    }
+
+  ul.navegador{
+    width: 100%;
+  }
+
+  ul.navegador li{
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  ul li a{
+    font-size: 14px;
+  }
+
+ul li img{
+  width: 12%;
+}
+
+}
+
+@media (min-width: 751px) and (max-width: 1000px){
+.punt{
+    width: 19%;;
+    }
+  .navegador li {
+    padding-left: 35px;
+  }
+
 }
