@@ -12,6 +12,10 @@ body {
 
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 #barra{
 display: flex;
 flex-wrap: wrap;

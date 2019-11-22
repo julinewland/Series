@@ -93,7 +93,7 @@ for (var i = 0; i <5; i++) {
 
 
   .catch(function(error) {
-    alert("Error, perdon, vuelva mas tarde")
+    console.log("error");
   })
 
   fetch("https://api.themoviedb.org/3/tv/"+ idGenero +"/videos?api_key=9901ee414425659325dc091c288e33c9&language=en-US")
@@ -154,6 +154,8 @@ verRecomendaciones.addEventListener('click', function() {
   }
 })
 
+
+
 var buscar = document.querySelector(".buscadors") //ESTO ES el formT
 var buscado = document.querySelector(".white") //ESTO ES EL INPUT PARA ESCRIBIR
 
@@ -168,19 +170,6 @@ buscar.onsubmit = function(event){
   }
 }
 
-// if (display = "none") {
-//   verRecomendaciones.onclick = function () {
-//      recomendadas.style.display = "flex";
-//  }
-// }
-// else {
-//   verRecomendaciones.onclick = function () {
-//     recomendadas.style.display = "none";
-//   }
-// }
-
-
-
 
 
 
@@ -189,7 +178,7 @@ buscar.onsubmit = function(event){
 var recuperoStorage = localStorage.getItem("seriesFavoritas");
 
 
-// Si todavía no tenía gifs favoritos
+// Si todavía no tenía series favoritos
 if (recuperoStorage == null) {
 // crear una lista vacia
 
@@ -211,7 +200,11 @@ seriesFavoritas = JSON.parse(recuperoStorage);
     })
     .then(function(results) {
       console.log(results);
+      if (seriesFavoritas.includes(idSerie)) {
+      document.querySelector("button").innerHTML = "Quitar de favoritos";}
+      else {
       document.querySelector("button").innerHTML = "Agregar a favoritos";
+      }
     })
 
     document.querySelector("button").onclick = function() {

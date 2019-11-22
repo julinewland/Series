@@ -42,7 +42,7 @@ window.addEventListener('load', function() {
 
 
 
-    if (genero != generoE || generoE) {
+    if (genero != "" || generoE != "") {
       //  if (genero == "" || generoE == "" ) {
       if (orden == "" && anio == "" && genero == "" && generoE == "") {
         $.notify("Seleccion al menos un elemento", {autoHideDelay: 3000});
